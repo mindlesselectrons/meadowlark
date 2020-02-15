@@ -1,3 +1,5 @@
+var custom_fortune = require('./custom_library/fortune.js');
+
 var express = require('express')
 
 var app = express();
@@ -23,8 +25,9 @@ app.get('/', function(req, res){
 
 //the  route  for  the  About  page  will  work for /about, /About, /about/, /about?foo=bar, /about/?foo=bar, etc.
 app.get('/about', function(req, res){
-  var randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)]
-  res.render('about', { fortune: randomFortune})
+  //var randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)]
+  //res.render('about', { fortune: randomFortune})
+  res.render('about', { fortune: custom_fortune.getFortune() })
 })
 
 //secret apple page
