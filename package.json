@@ -1,0 +1,15 @@
+{
+  "name": "meadowlark",
+  "version": "1.0.0",
+  "description": "simulate a travel company website",
+  "main": "meadowlark.js",
+  "scripts": {
+    "test": "run"
+  },
+  "author": "tom",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express3-handlebars": "^0.5.2"
+  }
+}
